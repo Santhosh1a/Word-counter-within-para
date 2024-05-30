@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>length converter</title>
+  <link rel="stylesheet" href="D:\js\functions_basic\style.css">
+    
+</head>
+<body>
+    <div id="wrapper">
+        <h2>wordcount</h2>
+        <div class="inputdiv">
+            <!-- <textarea  id="input" cols="20" rows="13"></textarea> -->
+        
+           <div id="input">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, cum.</div>
+        
+        </div>
+        <div>
+            <button type="submit" onclick="wordcout()">calculate words</button>
+        </div>
+        <div id="words2">
+
+        </div>
+       
+    </div>
+    <script>
+        function wordcout(){
+            let cowords=document.getElementById("input")
+            let words=cowords.innerText
+            let splitw=words.split(' ').length
+            let words2=document.getElementById("words2")
+            words2.innerHTML=splitw+"W"
+
+
+
+        }
+      
+    </script>
+</body>
+</html>
